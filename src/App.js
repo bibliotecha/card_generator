@@ -1,76 +1,36 @@
 import React from "react";
+import Card from "./Card";
 
-class Counter extends React.Component {
-  state = {
-    suuji: 1,
-    bairitsu: 1,
-    result: 1,
-  };
-
+class Dashboard extends React.Component {
   render() {
     return (
-      <div
-        style={{
-          height: "100vh",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-        <div>
-          <h2>数字</h2>
-          <h1>{this.state.suuji}</h1>
-          <div>
-            <button
-              onClick={() => this.setState({ suuji: this.state.suuji + 1 })}
-            >
-              +
-            </button>
-            <button
-              onClick={() => this.setState({ suuji: this.state.suuji - 1 })}
-            >
-              -
-            </button>
-          </div>
-        </div>
-        <div>
-          <h2>倍率</h2>
-          <h1>{this.state.bairitsu}</h1>
-          <div>
-            <button
-              onClick={() =>
-                this.setState({ bairitsu: this.state.bairitsu + 1 })
-              }
-            >
-              +
-            </button>
-            <button
-              onClick={() =>
-                this.setState({ bairitsu: this.state.bairitsu - 1 })
-              }
-            >
-              -
-            </button>
-          </div>
-        </div>
-        <div>
-          <h2>結果</h2>
-          <h1>{this.state.result}</h1>
-          <div>
-            <button
-              onClick={() =>
-                this.setState({
-                  result: this.state.suuji * this.state.bairitsu,
-                })
-              }
-            >
-              かける
-            </button>
-          </div>
+      <div>
+        <div>dashboard</div>
+        <div style={{ display: "flex" }}>
+          <Card
+            title="子犬"
+            description="子犬の説明"
+            imgUrl="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+          />
+          {/* <Card
+            title="不明"
+            description="description"
+            imgUrl="https://www.cdc.gov/healthypets/images/pets/cute-dog-headshot.jpg"
+          /> */}
+          <Card
+            title="レトリーバー"
+            description="レトリーバーの説明"
+            imgUrl="https://thecatandthedog.com/wp-content/uploads/2020/11/105992231-1561667465295gettyimages-521697453.jpeg"
+          />
+          <Card
+            title="パグ"
+            description="パグの説明"
+            imgUrl="https://post.healthline.com/wp-content/uploads/2020/08/3180-Pug_green_grass-732x549-thumbnail-732x549.jpg"
+          />
         </div>
       </div>
     );
   }
 }
 
-export default Counter;
+export default Dashboard;
