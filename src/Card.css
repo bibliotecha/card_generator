@@ -1,7 +1,11 @@
 .card__wrapper {
+
 }
 
+
 .card__img {
+  display: flex;
+  margin: left 50px;
 }
 
 .card__img img {
@@ -11,7 +15,16 @@
 }
 
 .card__title {
+ 
 }
 
+
 .card__description {
+}
+
+
+.dog {
+  border: solid 1px red;
+ 
+
 }
