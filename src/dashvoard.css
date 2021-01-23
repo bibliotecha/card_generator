@@ -1,0 +1,8 @@
+.cards{
+    display: flex;
+}
+
+.card{
+    border: solid red;
+    
+}
