@@ -1,12 +1,13 @@
 import React from "react";
 import Card from "./Card";
-import "./dashvoard.css";
+import "./dashboard.css";
 
 class Dashboard extends React.Component {
   render() {
     return (
       <div>
-        <div>dashboard</div>
+        <div className="title">
+          <h1>Dashboard</h1></div>
         <div className="cards">
           <div className="card">
            <Card
