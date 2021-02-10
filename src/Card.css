@@ -1,16 +1,23 @@
 .card__wrapper {
-  display: flex;
   border: 1px solid lightgray;
+  border-radius: 16px;
 }
 
 .card__img {
-  margin-right: 12px;
+  height: 300px;
 }
 
 .card__img img {
   display: block;
-  width: 350px;
+  width: 100%;
   height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.card__content {
+  padding: 8px;
 }
 
 .card__title {

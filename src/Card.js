@@ -9,7 +9,7 @@ class Card extends React.Component {
         <div className="card__img">
           <img src={this.props.imgUrl} alt="dog" />
         </div>
-        <div>
+        <div className="card__content">
           <div className="card__title">{this.props.title}</div>
           <div className="card__description">{this.props.description}</div>
         </div>
