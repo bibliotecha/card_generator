@@ -15,7 +15,7 @@ class Dashboard extends React.Component {
         title: "レトリーバー",
         description: "レトリーバーの説明",
         imgUrl:
-          "https://thecatandthedog.com/wp-content/uploads/2020/11/105992231-1561667465295gettyimages-521697453.jpeg",
+          "https://img.wanqol.com/2021/10/5c93e73f-golden_yoko.jpg?auto=format",
       },
       {
         title: "パグ",
